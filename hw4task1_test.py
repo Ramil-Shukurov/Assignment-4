@@ -9,7 +9,7 @@ class TestCollatzSequence(unittest.TestCase):
     @patch('sys.stdout', new_callable=StringIO)
     def test_collatz_sequence_output(self, mock_stdout, mock_input):
         Task_1.main()
-        expected_output = "51 154 77 232 116 58 29 88 44 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 \nMax number: 232\n"
+        expected_output = "51 154 77 232 116 58 29 88 44 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1\nMax number: 232\n"
         self.assertEqual(mock_stdout.getvalue(), expected_output)
 
     def test_collatz_sequence_max_collatz_multiple(self):

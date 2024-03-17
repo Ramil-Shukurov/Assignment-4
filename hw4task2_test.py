@@ -9,7 +9,7 @@ class TestPolydivisibleNumbers(unittest.TestCase):
                 {'input': '123456', 'expected_output': '1 % 1 = 0\n12 % 2 = 0\n123 % 3 = 0\n1234 % 4 = 2\nFalse\n'},
                 {'input': '789', 'expected_output': '7 % 1 = 0\n78 % 2 = 0\n789 % 3 = 0\nTrue\n'},
                 {'input': '10203040506070809', 'expected_output': '1 % 1 = 0\n10 % 2 = 0\n102 % 3 = 0\n1020 % 4 = 0\n10203 % 5 = 3\nFalse\n'},
-                {'input': '122', 'expected_output': '1 % 1 = 0\n12 % 2 = 0\n122 % 3 = 0\nTrue\n'},
+                {'input': '123', 'expected_output': '1 % 1 = 0\n12 % 2 = 0\n123 % 3 = 0\nTrue\n'},
                 {'input': '0', 'expected_output': 'True\n'}
         ]
         for test_case in test_cases:
